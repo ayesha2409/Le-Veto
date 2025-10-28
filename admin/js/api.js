@@ -1,4 +1,4 @@
-export const API_BASE = 'le-veto-production.up.railway.app';
+export const API_BASE = "https://le-veto-production.up.railway.app";
 const TOKEN_KEY = 'lv_admin_jwt';
 
 export const token = {

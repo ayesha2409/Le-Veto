@@ -1,5 +1,5 @@
 /* ================== CONFIG ================== */
-const API_BASE = "le-veto-production.up.railway.app";
+const API_BASE = "https://le-veto-production.up.railway.app";
 const TOKEN_KEY = "lv_jwt";
 const setToken   = (t) => localStorage.setItem(TOKEN_KEY, t);
 const getToken   = ()  => localStorage.getItem(TOKEN_KEY);
