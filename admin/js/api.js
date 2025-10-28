@@ -1,4 +1,4 @@
-export const API_BASE = 'http://localhost:5000';
+export const API_BASE = 'le-veto-production.up.railway.app';
 const TOKEN_KEY = 'lv_admin_jwt';
 
 export const token = {
