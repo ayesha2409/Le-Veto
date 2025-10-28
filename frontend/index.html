@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Veto Veterinary Clinic</title>
+
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+ 
+  
+
+</head>
+<body data-page="home">
+  <header>
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="images/logo.svg" alt="Le Veto Logo" />
+      <span class="brand">LE VETO</span>
+    </div>
+
+  <div class="nav-links" id="navLinks">
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#services">SERVICES</a>
+  <a href="#appointment">APPOINTMENT</a>
+  <a href="#contact">CONTACT</a>
+</div>
+      
+    </div>
+
+    <button class="sign-in-btn" id="signInBtn">SIGN IN</button>
+    <div id="userIcon" class="user-icon">
+    <img id="navAvatar" data-avatar alt="" style="width:32px; height:32px; border-radius:50%; object-fit:cover; display:none;" />
+    </div>
+
+    <div class="mobile-icons" id="mobileIcons">
+      <div class="mobile-icon-container">
+       <div id="userMobileIcon" class="user-icon user-mobile">
+       <img id="navAvatar" data-avatar alt="" style="width:32px; height:32px; border-radius:50%; object-fit:cover; display:none;" />
+</div>
+
+        <div class="hamburger" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dropdown -->
+  <div class="dropdown" id="userDropdown">
+      <a href="profile.html" id="profileLink">
+    <i class="fa-regular fa-user profile-icon"></i>PROFILE</a>
+
+      <a href="#" id="logoutLink">
+    <i class="fa-solid fa-arrow-right-from-bracket logout-icon"></i>LOG OUT</a>    
+
+   </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu"></div>
+
+  <!-- ================= HOME ================= -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>WELCOME</h1>
+      <P>Trusted Care for Your Furry Friends</P>
+    </div>
+    <img id="heroImg" alt="Le Veto Clinic">
+
+  </section>
+
+  <!--ABOUT-->
+    <section id="about">
+    <div class="section-heading">
+      <h3 class="about-title">ABOUT US</h3>
+    </div>
+  
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>LE VETO</h2>
+        <p>
+          At <strong>Le Veto Veterinary Clinic</strong>, we care for pets as if they were our own. 
+          Our team is dedicated to providing gentle, professional care from routine check-ups 
+          to advanced treatments in a welcoming and supportive environment. 
+          Here, your pets are family.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="images/about.png" alt="about">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services">
+    <div class="section-heading">
+      <h3 class="services-title">Services</h3>
+    </div>
+    
+  <div class="carousel-container">
+    <div class="splide splide-services" aria-label="Services Carousel">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="service-card" style="background-image:url('images/preventive.jpg')">
+              <h3 class="service-title">Preventive Care</h3>
+              <div class="service-details">
+                <ul>
+                  <li>Vaccinations</li>
+                  <li>Parasite control</li>
+                  <li>Routine exams</li>
+                  <li>Nutrition counseling</li>
+                  <li>Microchipping</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="service-card" style="background-image:url('images/grooming.jpg')">
+              <h3 class="service-title">Pet Grooming</h3>
+              <div class="service-details">
+                <ul>
+                  <li>Bathing</li>
+                  <li>Haircuts</li>
+                  <li>Nail trimming</li>
+                  <li>Ear cleaning</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="service-card" style="background-image:url('images/medical.jpg')">
+              <h3 class="service-title">Medical & Surgical Care</h3>
+              <div class="service-details">
+                <ul>
+                  <li>Diagnosis</li>
+                  <li>Surgery</li>
+                  <li>Post-op care</li>
+                  <li>Emergency</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="service-card" style="background-image:url('images/diagnostic.jpg')">
+              <h3 class="service-title">Diagnostic Services</h3>
+              <div class="service-details">
+                <ul>
+                  <li>Ultrasound</li>
+                  <li>Skin scraping</li>
+                  <li>Blood tests</li>
+                  <li>Emergency</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="service-card" style="background-image:url('images/dental.jpg')">
+              <h3 class="service-title">Dental Care</h3>
+              <div class="service-details">
+                <ul>
+                  <li>Descaling</li>
+                  <li>Extractions</li>
+                  <li>Preventive care</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ================= APPOINTMENT ================= -->
+  <section id="appointment">
+    <div class="section-heading">
+      <h3 class="appointments-title">Appointment</h3>
+    </div>
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+    <div id="loading-overlay" class="loading-overlay">
+      <div class="loading-spinner">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>Submitting your appointment...</p>
+      </div>
+    </div>
+    <div class="appointment-container">
+      <div class="appointment-wrapper">
+        <div class="left-section">
+           <h1 class="main-title">Book An Appointment</h1>
+           <img src="images/appointment.jpg" alt="Appointment illustration" class="appointment-image">
+        </div>
+
+        <div class="form-section">
+          <form id="appointmentForm" class="form-container" novalidate>
+            <div class="form-row">
+              <div class="input-group">
+                <div class="input-wrapper">
+                  <i class="fas fa-user input-icon"></i>
+                  <label for="name" class="sr-only">Full Name</label>
+                  <input type="text" name="name" id="name" placeholder="Full Name" class="form-input" required autocomplete="name" aria-describedby="name-error">
+                </div>
+                <div class="error-message" id="name-error" role="alert"></div>
+              </div>
+              <div class="input-group">
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope input-icon"></i>
+                  <label for="email" class="sr-only">Email Address</label>
+                  <input type="email" name="email" id="email" placeholder="Email Address" class="form-input" required autocomplete="email" aria-describedby="email-error">
+                </div>
+                <div class="error-message" id="email-error" role="alert"></div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input-group">
+                <div class="input-wrapper">
+                  <i class="fas fa-phone input-icon"></i>
+                  <label for="phone" class="sr-only">Phone Number</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Phone Number" class="form-input" required autocomplete="tel" aria-describedby="phone-error">
+                </div>
+                <div class="error-message" id="phone-error" role="alert"></div>
+              </div>
+              <div class="input-group">
+                <div class="input-wrapper">
+                  <i class="fas fa-paw input-icon"></i>
+                  <label for="petName" class="sr-only">Pet Name</label>
+                  <input type="text" name="petName" id="petName" placeholder="Pet Name" class="form-input" required aria-describedby="petName-error">
+                </div>
+                <div class="error-message" id="petName-error" role="alert"></div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input-group">
+                <div class="input-wrapper">
+                  <i class="fas fa-calendar input-icon"></i>
+                  <label for="date" class="sr-only">Appointment Date</label>
+                  <input type="date" name="date" id="date" class="form-input" required aria-describedby="date-error">
+                </div>
+                <div class="error-message" id="date-error" role="alert"></div>
+              </div>
+              <div class="input-group">
+                <div class="input-wrapper">
+                  <i class="fas fa-clock input-icon"></i>
+                  <label for="time" class="sr-only">Appointment Time</label>
+                  <select name="time" id="time" class="form-select" required aria-describedby="time-error" disabled>
+                    <option value="">Select a date first</option>
+                  </select>
+                </div>
+                <div class="error-message" id="time-error" role="alert"></div>
+              </div>
+            </div>
+
+            <div class="input-group full-width">
+              <div class="input-wrapper">
+                <i class="fas fa-cogs input-icon"></i>
+                <label for="serviceType" class="sr-only">Service Type</label>
+                <select name="serviceType" id="serviceType" class="form-select" required aria-describedby="service-error">
+                  <option value="">Select Service</option>
+                  <option value="consultation">Consultation</option>
+                  <option value="grooming">Grooming</option>
+                </select>
+              </div>
+              <div class="error-message" id="service-error" role="alert"></div>
+            </div>
+
+            <div class="input-group full-width">
+              <div class="input-wrapper">
+                <i class="fas fa-comment input-icon textarea-icon"></i>
+                <label for="message" class="sr-only">Additional Notes</label>
+                <textarea name="message" id="message" placeholder="Additional notes or special requests..." rows="3" class="form-textarea" aria-describedby="message-info" maxlength="500"></textarea>
+                <div class="char-counter" id="char-count">0</div>
+              </div>
+              <div class="info-message" id="message-info">Optional: Let us know any special requirements</div>
+            </div>
+
+            <div class="appointment-summary" id="appointment-summary" style="display: none;">
+              <h4><i class="fas fa-calendar-check"></i> Appointment Summary</h4>
+              <div class="summary-content" id="summary-content"></div>
+            </div>
+
+            <button type="submit" class="submit-button" id="submit-btn">
+              <span class="btn-text">Book Appointment</span>
+              <i class="fas fa-arrow-right btn-icon"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ================= CONTACT ================= -->
+   <section id="contact">
+    <div class="section-heading">
+      <h3 class="contact-title">Contact Us</h3>
+    </div>
+
+  <div class="contact-container">
+    <div class="location-section">
+      <div class="location-content">
+        <div class="left-side">
+          <h2>Visit Our Clinic</h2>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.5285332462163!2d57.450451574188556!3d-20.23690354793673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c45b06c847bbf%3A0x243f3a6ce1d214d9!2sLE%20VETO%20veterinary%20services!5e0!3m2!1sen!2smu!4v1757898243515!5m2!1sen!2smu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="right-side">
+          <h3>Get in Touch</h3>
+          <p><i class="fas fa-phone"></i> +230 5455 0000</p>
+          <p><i class="fas fa-envelope"></i> contact@leveto.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Rue de la Concorde, Beau Bassin-Rose Hill</p>
+
+          <h3>Business Hours</h3>
+          <p><i class="fas fa-clock"></i> Monday – Friday: 9AM – 6PM</p>
+          <p><i class="fas fa-clock"></i>Saturday: 9AM – 2PM</p>
+          <p><i class="fas fa-clock"></i>Sunday: 9AM – 10AM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Reviews-->
+<section id="reviews" class="reviews-section">
+  <h2 class="reviews-title">What clients say</h2>
+
+  <div class="splide splide-reviews" aria-label="Client reviews">
+    <div class="splide__track">
+      <ul class="splide__list" id="reviewsList">
+      </ul>
+    </div>
+  </div>
+
+  <p class="reviews-attrib">Reviews powered by Google</p>
+</section>
+
+
+ <!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-logo">
+    <img src="images/logo.png" alt="Le Veto Logo">
+  </div>
+
+  <div class="footer-section">
+    <h4>Menu</h4>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#appointment">Appointments</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h4>Socials</h4>
+    <ul>
+      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h4>Contact</h4>
+    <ul>
+      <li><a href="mailto:leveto@gmail.com"><i class="fas fa-envelope"></i> leveto@gmail.com</a></li>
+      <li><a href="tel:+23054550000"><i class="fas fa-phone"></i> +230-5455-0000</a></li>
+      <li class="address"><i class="fas fa-map-marker-alt"></i> Rue de la Concorde, Beau Bassin-Rose Hill</li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Le Veto. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- ================= AUTH MODAL ================= -->
+<div class="auth-overlay" id="authOverlay" aria-hidden="true">
+  <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <button class="auth-close" id="authClose" aria-label="Close">&times;</button>
+    <!-- Sign In -->
+    <div class="auth-panel" id="panelSignIn">
+      <h2 id="authTitle">Sign in</h2>
+      <form id="signInForm" novalidate>
+        <label class="auth-label">Email
+          <input type="email" class="auth-input" id="siEmail" placeholder="" required>
+        </label>
+
+        <label class="auth-label">Password
+          <div class="auth-input-wrap">
+            <input type="password" class="auth-input" id="siPassword" placeholder="" required>
+            <button type="button" class="auth-eye" data-target="siPassword" aria-label="Show/Hide password">
+              <i class="fa-regular fa-eye-slash"></i>
+            </button>
+          </div>
+        </label>
+
+        <button type="submit" class="auth-submit" id="siSubmit" disabled>Sign in</button>
+
+        <div class="auth-row">
+          <label class="auth-remember">
+            <input type="checkbox" id="siRemember">
+            <span>Remember me</span>
+          </label>
+        </div>
+
+        <p class="auth-foot">
+          Don’t have an account? <a href="#" id="toSignUp">Sign up</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- Sign Up -->
+    <div class="auth-panel" id="panelSignUp" hidden>
+      <h2>Sign up</h2>
+      <form id="signUpForm" novalidate>
+        <label class="auth-label">Email
+          <input type="email" class="auth-input" id="suEmail" required>
+        </label>
+
+        <label class="auth-label">Password
+          <div class="auth-input-wrap">
+            <input type="password" class="auth-input" id="suPassword" required>
+            <button type="button" class="auth-eye" data-target="suPassword" aria-label="Show/Hide password">
+              <i class="fa-regular fa-eye-slash"></i>
+            </button>
+          </div>
+        </label>
+
+        <label class="auth-label">Confirm Password
+          <div class="auth-input-wrap">
+            <input type="password" class="auth-input" id="suPassword2" required>
+            <button type="button" class="auth-eye" data-target="suPassword2" aria-label="Show/Hide password">
+              <i class="fa-regular fa-eye-slash"></i>
+            </button>
+          </div>
+        </label>
+
+        <button type="submit" class="auth-submit" id="suSubmit" disabled>Create account</button>
+
+        <p class="auth-foot">
+          Already have an account? <a href="#" id="toSignIn">Sign in</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

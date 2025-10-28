@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Le Veto • Admin</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/components.css" />
+  <link rel="stylesheet" href="./styles/pages.css" />
+</head>
+<body>
+  <!-- Login View -->
+  <div id="login-view" class="login-wrap">
+    <div class="card login-card">
+      <h1>Admin Sign in</h1>
+      <form id="login-form">
+        <label>Email <input id="login-email" type="email" required /></label>
+        <label>Password <input id="login-password" type="password" required /></label>
+        <button class="btn-primary" type="submit">Sign in</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- App Shell -->
+  <div id="app-shell" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand">Le Veto Admin</div>
+      <nav>
+        <a href="#/dashboard" class="active">Dashboard</a>
+        <a href="#/appointments">Appointments</a>
+        <a href="#/users">Users</a>
+        <a href="#/pets">Pets</a>
+        <a href="#/content">Content</a>
+        <a href="#/settings">Settings</a>
+      </nav>
+      <button id="signout" class="btn-ghost mt-auto">Sign out</button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="title" id="page-title">Dashboard</div>
+      </header>
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root"></div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile – Le Veto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-page="profile">
+
+  <!-- Profile layout -->
+  <main class="profile-wrap">
+    <button class="back-btn"
+        type="button"
+        aria-label="Back to home"
+        onclick="location.href='index.html#home'">
+      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+   </button>
+    <div class="profile-grid">
+
+      <section>
+        <div class="profile-hero card">
+        <button class="dots-btn" id="profileMore" type="button" aria-label="Account options">
+           <i class="fa-solid fa-ellipsis" aria-hidden="true"></i>
+           </button>
+          <div class="hero-text">
+            <h1>Hi, ‘User’!</h1>
+            <p class="muted">Phone Number</p>
+            <p class="muted">Email</p>
+          </div>
+          <div class="hero-avatar">
+
+          <img id="profileAvatar" data-avatar alt=""/>
+            <div class="avatar-lg"></div>
+          </div>
+        </div>
+
+<div class="pets-header">
+  <h2>My Pets</h2>
+  <button class="circle-add" id="addPetBtn" type="button" aria-label="Add pet">+</button>
+</div>
+
+<div id="petGrid" class="pet-grid"></div>
+      </section>
+
+    <aside>
+  <div class="appts card">
+    <h3>Appointments</h3>
+
+    <div class="segmented" role="tablist">
+      <button class="seg active" type="button" data-tab="upcoming" role="tab" aria-selected="true">Upcoming</button>
+      <button class="seg" type="button" data-tab="past" role="tab" aria-selected="false">Past</button>
+    </div>
+
+    <div id="tab-upcoming" class="appt-list"></div>
+    <div id="tab-past" class="appt-list" hidden></div>
+  </div>
+</aside>
+
+
+<!-- Account Details Modal -->
+<div id="accountModal" class="sheet-overlay" aria-hidden="true">
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="accTitle">
+    <div class="sheet-hd">
+      <h3 id="accTitle">Account Details</h3>
+      <button class="icon-btn" data-close aria-label="Close">&times;</button>
+    </div>
+    <div class="sheet-bd">
+      <form id="accountForm">
+  <div class="row">
+    <label class="auth-label">Full name
+      <input id="accName" class="auth-input" type="text" autocomplete="name" />
+    </label>
+    <label class="auth-label">Phone
+      <input id="accPhone" class="auth-input" type="tel" autocomplete="tel" />
+    </label>
+  </div>
+
+  <label class="auth-label">Email
+    <input id="accEmail" class="auth-input" type="email" disabled />
+  </label>
+
+  <div class="row" style="align-items:center">
+    <div>
+      <label class="auth-label">Profile picture</label>
+      <div style="display:flex; gap:10px; align-items:center">
+        <img id="accPhotoPreview" data-avatar alt=""
+             style="width:90px; height:90px; border-radius:50%; object-fit:cover; display:none;" />
+        <input id="accPhoto" type="file" accept="image/*" />
+        <button id="accPhotoRemove" class="btn-light" type="button">Remove</button>
+      </div>
+      
+    </div>
+  </div>
+
+<div class="sheet-actions" style="justify-content:flex-end">
+          <button class="btn-light" type="button" data-close>Close</button>
+          <button id="accSave" class="btn-dark" type="submit">Save</button>
+        </div>
+      </form>
+    </div> 
+  </div>   
+</div>    
+
+<!-- Pet Details-->
+<div id="petModal" class="sheet-overlay" aria-hidden="true">
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="petTitle">
+    <div class="sheet-hd">
+      <h3 id="petTitle">Pet Details</h3>
+      <button class="icon-btn" data-close aria-label="Close">&times;</button>
+    </div>
+
+    <form id="petForm" class="sheet-bd">
+      <input type="hidden" id="petId"/>
+
+      <div class="row">
+        <label class="auth-label">Pet name* 
+          <input id="petNameInput" class="auth-input" required/>
+        </label>
+        <label class="auth-label">Species* 
+          <input id="petSpeciesInput" class="auth-input" required/>
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="auth-label">Breed
+          <input id="petBreedInput" class="auth-input"/>
+        </label>
+        <label class="auth-label">Sex
+          <input id="petSexInput" class="auth-input"/>
+        </label>
+      </div>
+
+      <label class="auth-label">Date of Birth
+        <input id="petDobInput" class="auth-input" type="date"/>
+      </label>
+
+      <div class="row" style="align-items:center">
+        <div>
+          <label class="auth-label">Photo</label>
+          <div class="pet-photo-input">
+            <div id="petAvatarPreview" class="pet-avatar-preview"></div>
+            <input id="petAvatarFile" type="file" accept="image/*"/>
+            <button id="petAvatarRemove" class="btn-light" type="button">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet-actions">
+        <button id="petDeleteBtn" class="btn-danger" type="button">Remove</button>
+        <div style="flex:1"></div>
+        <button class="btn-light" type="button" data-close>Close</button>
+        <button class="btn-dark" type="submit">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
